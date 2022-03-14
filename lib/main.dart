@@ -1,4 +1,6 @@
+import 'package:f_state_handling_base_project/ui/controllers/my_color_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'ui/pages/home.dart';
 
@@ -12,7 +14,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    Get.put(MyColorController());
+    return GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Base project',
         theme: ThemeData(
